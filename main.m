@@ -55,8 +55,7 @@ catch
     isEmptySteps = 1;
 end
 
-% Load weaerable sleep data describing whether a subject is awake for each
-% time
+% Load weaerable sleep data describing whether a subject is awake for each time
 try
     Tsleep = readtable('Sample_data/sleep.csv','Delimiter', ',');
     Tsleep = table2array(Tsleep(:,1:2));
