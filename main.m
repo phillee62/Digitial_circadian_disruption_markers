@@ -79,4 +79,5 @@ if(~isEmptySteps)
     LSKF_circadian(dmy_hr, Thr, Tsteps, bin_size);
 
     %% Compute the digital markers of circadian disruptions
+    Digital_circadian_disruption_markers;
 end

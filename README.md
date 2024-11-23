@@ -20,9 +20,9 @@ Each of these digital markers have been shown to be negatively associated with t
 
 ## Pre-processing the data
 
-Users will first need to convert the raw heart rate, sleep, and steps data into three .csv files that can be used as an input to the algorithms, with the following specific format:
+Users will first need to convert their raw heart rate, sleep, and steps data into three .csv files that can be used as an input to the algorithms, with the following specific format:
 
-- Column 1 should contain timestamp information at which the data was collected, in Unix timestamp (i.e., seconds since standard epoch of 1/1/1970).
+- Column 1 should contain timestamp information in which the data was collected, in Unix timestamp (i.e., seconds since standard epoch of 1/1/1970).
 - Column 2 should contain data value (e.g., measured heart rate in bpm, step counts, or sleep annotations).
 - Column 3 should contain information about the data source (e.g., Apple Watch, iPhone, or FitBit), if applicable.
 
@@ -37,7 +37,7 @@ Note that the codes can be executed even without these information. In such case
 
 - Running the comprehensive analysis with the provided sample data should take only about a minute.
 
-- Users will need to appropriately change `line 5`, `line 40`, `line 49`, and `line 60` with their appropriate local directory to successfully import preprocessed data.
+- Users will need to appropriately change `line 5`, `line 40`, `line 49`, and `line 60` in `main.m` with their appropriate local directory to successfully import preprocessed data.
 
 - As part of the algorithm, four separate `results.csv` files will be generated:
     1. `Sleep_results.csv` containing the estimated timing of sleep onset, sleep midpoint, and sleep offset for each day. This is obtained by running the funtion `run_sleep_analysis.m`.

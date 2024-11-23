@@ -8,7 +8,9 @@
     fprintf(results_file, 'Date (dd-mmm-yyyy), Weighted Phase Estimate, Weighted Error, Heart Rate Phase Estimate, Heart Rate Phase Error, Model Phase Estimate, Model Phase Error, Raw Model Phase Estimate, Raw Model Phase Error \n');
     
     %% Set up, Import Heart Rate Phase est & std
-    k_noise = 6*10^(-3)*[1 0 0; 0 1 0; 0 0 1]; % System noise 
+    % k_noise = 6*10^(-3)*[1 0 0; 0 1 0; 0 0 1]; % System noise 
+    k_noise = 6*10^(-2)*[1 0 0; 0 1 0; 0 0 1]; % System noise 
+
     raw_hr_data = Thr;
     raw_steps_data = Tsteps;
     stp_to_act = mean(Tsteps(:,2));
