@@ -1,6 +1,6 @@
-# Digital markers of circadian disruption (Lee et al., npj Digit. Med., 2024)
+# Digital markers of circadian disruption
 
-This code computes digital markers of circadian disruption based on step, sleep, and heart rate data from the wearable devices. These digital markers can be power tools for future endeavors in studying the impact of circadian and sleep disruption on mental health and depression risks. 
+This code computes digital markers of circadian disruption based on activity, sleep, and heart rate data from the wearable devices. These digital markers can be powerful tools for future endeavors in studying the impact of circadian and sleep disruption on mental health and depression risks. 
 
 ## Basics
 
