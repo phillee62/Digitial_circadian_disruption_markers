@@ -49,6 +49,10 @@ Note that the codes can be executed even without these information. In such case
 
 - `Digital_circadian_disruption_markers.csv` should contain four columns, corresponding to `Datetime (dd-mm-yy)`, `CRCO-sleep misalignment`, `CRPO-sleep misalignment`, and `Internal misalignment`. 
  
+## Important Note
+
+Please note that the circadian disruption markers (i.e., CRCO-sleep and CRPO-sleep misalignments) can be executed without necessarily having a minute-by-minute sleep data for running `run_sleep_analysis.m`. In such case, however, users can manually provide information about `sleep onset`, `sleep midpoint`, and `sleep offset` information collected from the device to calculate these markers. 
+
 ## License
 
 This software is open source and under an MIT license.
